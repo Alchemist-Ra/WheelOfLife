@@ -1,0 +1,448 @@
+<div id="wheelWrapper" style="font-family: 'Coming Soon', 'Comic Sans MS', cursive, sans-serif; background-image: url('https://angelanddragonalchemy.powerappsportals.com/background_image.png'); background-size: cover; background-position-x: center; background-position-y: center; background-attachment: fixed; color: rgb(34, 34, 34); padding-top: 60px; padding-right: 20px; padding-bottom: 60px; padding-left: 20px; text-align: center;">
+  <div class="contentBubble" style="background-image: initial; background-position-x: initial; background-position-y: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgba(255, 255, 255, 0.6); backdrop-filter: blur(6px); border-top-left-radius: 24px; border-top-right-radius: 24px; border-bottom-right-radius: 24px; border-bottom-left-radius: 24px; padding-top: 40px; padding-right: 20px; padding-bottom: 40px; padding-left: 20px; margin-top: 0px; margin-right: auto; margin-bottom: 40px; margin-left: auto; max-width: 800px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 20px;">
+    <img src="https://angelanddragonalchemy.powerappsportals.com/transparent_logo.png" alt="Angel and Dragon Logo" style="max-width: 200px; height: auto; margin-bottom: 20px;" />
+    <h1 style="font-size: 2.2em; color: rgb(230, 32, 137); margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;">Your Wheel of Life</h1>
+    <h4 style="font-weight: normal; color: rgb(68, 68, 68); margin-top: 10px; margin-bottom: 40px;">A Journey of Alchemy and Insight</h4>
+    <svg id="wheel" viewBox="-110 -110 220 220" style="width: 100%; max-width: 300px; height: auto; margin-top: 20px; margin-right: auto; margin-bottom: 20px; margin-left: auto; display: block;"></svg>
+    <div class="inputs">
+      <table style="margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; border-collapse: collapse;">
+        <tbody>
+          <tr>
+            <td style="padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px;"><label for="cat1" style="font-weight: bold;">Health &amp; Wellbeing</label></td>
+            <td style="padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px;"><input type="number" id="cat1" placeholder="1-10" style="width: 60px; text-align: center;" /></td>
+          </tr>
+          <tr>
+            <td style="padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px;"><label for="cat2" style="font-weight: bold;">Financial Abundance</label></td>
+            <td style="padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px;"><input type="number" id="cat2" placeholder="1-10" style="width: 60px; text-align: center;" /></td>
+          </tr>
+          <tr>
+            <td style="padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px;"><label for="cat3" style="font-weight: bold;">Relationships</label></td>
+            <td style="padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px;"><input type="number" id="cat3" placeholder="1-10" style="width: 60px; text-align: center;" /></td>
+          </tr>
+          <tr>
+            <td style="padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px;"><label for="cat4" style="font-weight: bold;">Love &amp; Romance</label></td>
+            <td style="padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px;"><input type="number" id="cat4" placeholder="1-10" style="width: 60px; text-align: center;" /></td>
+          </tr>
+          <tr>
+            <td style="padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px;"><label for="cat5" style="font-weight: bold;">Community &amp; Belonging</label></td>
+            <td style="padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px;"><input type="number" id="cat5" placeholder="1-10" style="width: 60px; text-align: center;" /></td>
+          </tr>
+          <tr>
+            <td style="padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px;"><label for="cat6" style="font-weight: bold;">Work &amp; Purpose</label></td>
+            <td style="padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px;"><input type="number" id="cat6" placeholder="1-10" style="width: 60px; text-align: center;" /></td>
+          </tr>
+          <tr>
+            <td style="padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px;"><label for="cat7" style="font-weight: bold;">Personal Growth &amp; Learning</label></td>
+            <td style="padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px;"><input type="number" id="cat7" placeholder="1-10" style="width: 60px; text-align: center;" /></td>
+          </tr>
+          <tr>
+            <td style="padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px;"><label for="cat8" style="font-weight: bold;">Hobbies &amp; Leisure</label></td>
+            <td style="padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px;"><input type="number" id="cat8" placeholder="1-10" style="width: 60px; text-align: center;" /></td>
+          </tr>
+          <tr>
+            <td style="padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px;"><label for="cat9" style="font-weight: bold;">Living Space &amp; Possessions</label></td>
+            <td style="padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px;"><input type="number" id="cat9" placeholder="1-10" style="width: 60px; text-align: center;" /></td>
+          </tr>
+          <tr>
+            <td style="padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px;"><label for="cat10" style="font-weight: bold;">Spirituality &amp; Identity</label></td>
+            <td style="padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px;"><input type="number" id="cat10" placeholder="1-10" style="width: 60px; text-align: center;" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <p id="nameLine" style="display: none; text-align: center; font-family: 'Coming Soon', cursive; font-size: 1.1em;"><strong>Name:</strong> <span id="user-name"></span></p>
+    </div>
+    <button onclick="updateWheel()" style="background-color: rgb(230, 32, 137); color: white; padding-top: 12px; padding-right: 24px; padding-bottom: 12px; padding-left: 24px; border-top-width: initial; border-right-width: initial; border-bottom-width: initial; border-left-width: initial; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-color: initial; border-right-color: initial; border-bottom-color: initial; border-left-color: initial; border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; font-size: 1.1em; cursor: pointer; margin-top: 20px;">Update Wheel</button>
+    <p style="margin-top: 1.5em; font-family: 'Coming Soon', sans-serif; font-size: 1em; line-height: 1.4em; text-align: center;">
+      Want to save your Wheel? Want to use it as a journalling tool to reflect on what’s working and what’s ready for an upgrade in each area of your life? Click below to get a custom workbook, no obligation. <strong>We don’t save your data, we don’t require an email address, this is not a funnel.</strong> Just the offer of a tool. <br /><br />
+      Come back as often as you like and reassess your life — see where things have shifted.
+    </p>
+    <button onclick="showNamePrompt()" style="background-color: rgb(230, 32, 137); color: white; padding-top: 12px; padding-right: 24px; padding-bottom: 12px; padding-left: 24px; border-top-width: initial; border-right-width: initial; border-bottom-width: initial; border-left-width: initial; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-color: initial; border-right-color: initial; border-bottom-color: initial; border-left-color: initial; border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; font-size: 1.1em; cursor: pointer; margin-top: 20px;">Create My Downloadable Workbook</button>
+  </div>
+</div>
+<div id="nameModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); align-items: center; justify-content: center; z-index: 9999;">
+  <div style="background: white; padding: 20px; border-radius: 10px; width: 90%; max-width: 400px; text-align: center; font-family: sans-serif;">
+    <h2>Customise your workbook</h2>
+    <p>Enter your name below to personalise your workbook.<br /><strong>This name is not saved</strong>, and you are not signing up for anything.</p>
+    <input type="text" id="userNameInput" placeholder="Your name" style="padding: 10px; width: 90%; margin: 10px 0;" /><br /><button onclick="generateWorkbook(document.getElementById('userNameInput').value)">Create Workbook</button><br /><br /><button onclick="closeNamePrompt()" style="background: none; border: none; color: #666; font-size: 0.9em;">Cancel</button>
+  </div>
+</div>
+<div class="row sectionBlockLayout text-left" style="display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;">
+  <div class="container" style="padding: 0px; display: flex; flex-wrap: wrap;"><div class="col-md-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 250px;"></div></div>
+</div>
+
+<div id="coverPage" style="display: none; width: 794px; height: 1123px; position: relative; background-image: url('https://angelanddragonalchemy.powerappsportals.com/workbook_cover.png'); background-size: cover; background-position: center; font-family: 'Coming Soon', 'Comic Sans MS', cursive, sans-serif; color: #222; text-align: center; padding: 60px 40px;">
+
+  <img src="https://angelanddragonalchemy.powerappsportals.com/transparent_logo.png" alt="Logo" style="max-width: 160px; margin-bottom: 30px;" />
+  <h1 style="font-size: 2.5em; color: #e62089; margin-bottom: 0.3em;">Your Wheel of Life</h1>
+  <h2 style="font-weight: normal; font-size: 1.4em; color: #444; margin-bottom: 2em;">A Journey of Alchemy and Insight</h2>
+  <p id="cover-name" style="font-size: 1.6em; font-style: italic;"></p>
+
+  <div style="height: 30px;"></div>
+
+  <img src="https://angelanddragonalchemy.powerappsportals.com/pentagram.png" alt="Wheel of Life Collage"
+    style="display: block; width: 80%; max-width: 126mm; margin: 0 auto; border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);" />
+
+</div>
+
+
+<div id="wheelPage" style="display: none; width: 794px; height: 1123px; position: relative; background-image: url('https://angelanddragonalchemy.powerappsportals.com/background_image.png'); background-size: cover; background-position: center; font-family: 'Coming Soon', 'Comic Sans MS', cursive, sans-serif; color: #222; text-align: center; padding: 60px 40px;">
+  <div style="background-color: rgba(255, 255, 255, 0.6); backdrop-filter: blur(6px); border-radius: 24px; max-width: 700px; margin: 0 auto; padding: 40px 30px 60px 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
+    <h2 style="font-size: 1.6em; color: #e62089; margin-bottom: 30px;">Your Current Life Balance</h2>
+
+    <!-- Placeholder for the actual wheel (inserted via script) -->
+    <div id="wheelCloneContainer" style="margin: 0 auto 2em auto; display: flex; justify-content: center;"></div>
+
+    <!-- Score list will be dynamically populated -->
+    <div id="scoreList" style="font-size: 1.1em; line-height: 1.8em; max-width: 500px; margin: 0 auto;"></div>
+  </div>
+</div>
+
+<script>
+  const wheel = document.getElementById("wheel");
+  const radius = 100;
+  const levels = 9;
+  const totalSegments = 10;
+  const segmentAngle = (2 * Math.PI) / totalSegments;
+
+  function drawWheel() {
+    wheel.innerHTML = "";
+
+    for (let i = 1; i <= levels; i++) {
+      wheel.innerHTML += `<circle cx="0" cy="0" r="${(i / levels) * radius}" fill="none" stroke="lightgray" />`;
+    }
+
+    for (let i = 0; i < totalSegments; i++) {
+      const startAngle = i * segmentAngle;
+      const endAngle = startAngle + segmentAngle;
+      const x1 = Math.cos(startAngle) * radius;
+      const y1 = Math.sin(startAngle) * radius;
+      const x2 = Math.cos(endAngle) * radius;
+      const y2 = Math.sin(endAngle) * radius;
+      const pathData = `
+        M 0 0
+        L ${x1} ${y1}
+        A ${radius} ${radius} 0 0 1 ${x2} ${y2}
+        Z
+      `;
+      wheel.innerHTML += `<path d="${pathData}" fill="rgba(200, 200, 200, 0.2)" stroke="black" />`;
+    }
+  }
+
+  function updateWheel() {
+    const inputs = document.querySelectorAll(".inputs input");
+    const values = Array.from(inputs).map(input => Math.min(10, Math.max(0, parseInt(input.value) || 0)));
+    drawWheel();
+
+    const colors = ["#FF0000", "#FF7F00", "#FFFF00", "#00FF00", "#0000FF", "#4B0082", "#8B00FF", "#FF1493", "#FFD700", "#00CED1"];
+
+    values.forEach((value, i) => {
+      const scaledRadius = (value / 10) * radius;
+      const startAngle = i * segmentAngle;
+      const endAngle = startAngle + segmentAngle;
+      const x1 = Math.cos(startAngle) * scaledRadius;
+      const y1 = Math.sin(startAngle) * scaledRadius;
+      const x2 = Math.cos(endAngle) * scaledRadius;
+      const y2 = Math.sin(endAngle) * scaledRadius;
+      const pathData = `
+        M 0 0
+        L ${x1} ${y1}
+        A ${scaledRadius} ${scaledRadius} 0 0 1 ${x2} ${y2}
+        Z
+      `;
+      wheel.innerHTML += `<path d="${pathData}" fill="${colors[i % colors.length]}" stroke="black" />`;
+    });
+  }
+
+  drawWheel();
+
+  function showNamePrompt() {
+  document.getElementById('nameModal').style.display = 'flex';
+  }
+
+  function closeNamePrompt() {
+  document.getElementById('nameModal').style.display = 'none';
+  }
+
+function generateWorkbook(name) {
+  name = name.trim();
+  closeNamePrompt();
+
+  const { jsPDF } = window.jspdf;
+  const pdf = new jsPDF('p', 'mm', 'a4');
+
+  createCover(pdf, name, () => {
+    createWheelPage(pdf, () => {
+      createJournalPages(pdf, () => {
+        createBackCover(pdf, () => {
+        pdf.save('wheel-of-life-workbook.pdf');
+        });
+      });
+    });
+  });
+}
+
+function createCover(pdf, name, callback) {
+  const pdfWidth = pdf.internal.pageSize.getWidth();
+  const pdfHeight = pdf.internal.pageSize.getHeight();
+
+  const coverImg = new Image();
+  coverImg.src = 'https://angelanddragonalchemy.powerappsportals.com/workbook_cover.png';
+
+  coverImg.onload = function () {
+    pdf.addImage(coverImg, 'PNG', 0, 0, pdfWidth, pdfHeight);
+
+    const logo = new Image();
+    logo.src = 'https://angelanddragonalchemy.powerappsportals.com/transparent_logo.png';
+
+    logo.onload = function () {
+      const logoWidth = 40;
+      const logoX = (pdfWidth - logoWidth) / 2;
+      const logoY = 30;
+      pdf.addImage(logo, 'PNG', logoX, logoY, logoWidth, 0);
+
+      pdf.setFont('helvetica', 'bold');
+      pdf.setFontSize(24);
+      pdf.setTextColor('#e62089');
+      pdf.text('Your Wheel of Life', pdfWidth / 2, logoY + 50, { align: 'center' });
+
+      pdf.setFont('helvetica', 'normal');
+      pdf.setFontSize(16);
+      pdf.setTextColor(68);
+      pdf.text('A Journey of Alchemy and Insight', pdfWidth / 2, logoY + 65, { align: 'center' });
+
+      if (name) {
+        pdf.setFont('helvetica', 'italic');
+        pdf.setFontSize(16);
+        pdf.text(name, pdfWidth / 2, logoY + 80, { align: 'center' });
+      }
+
+      callback(); // Proceed to next page
+    };
+  };
+}
+
+// === createWheelPage ===
+function createWheelPage(pdf, callback) {
+  const pdfWidth = pdf.internal.pageSize.getWidth();
+  const pdfHeight = pdf.internal.pageSize.getHeight();
+
+  // Load the background image
+  const bg = new Image();
+  bg.src = 'https://angelanddragonalchemy.powerappsportals.com/workbook_background.png';
+
+  bg.onload = function () {
+    pdf.addPage();
+    pdf.addImage(bg, 'PNG', 0, 0, pdfWidth, pdfHeight);
+
+    // Step 1: Collect values
+    const inputs = document.querySelectorAll('.inputs input');
+    const values = Array.from(inputs).map(input => parseInt(input.value) || 0);
+
+    // Step 2: Generate the canvas and convert to image data
+    const wheelCanvas = generateWheelCanvas(values);
+    const imgData = wheelCanvas.toDataURL('image/png');
+
+    // Step 3: Add Wheel image to PDF
+    const wheelDisplayWidth = 100;
+    const wheelDisplayHeight = 100;
+    const wheelX = (pdfWidth - wheelDisplayWidth) / 2;
+    const wheelY = 25;
+    pdf.addImage(imgData, 'PNG', wheelX, wheelY, wheelDisplayWidth, wheelDisplayHeight);
+
+    // Step 4: Add Heading
+    pdf.setFont('helvetica', 'bold');
+    pdf.setFontSize(20);
+    pdf.setTextColor(230, 32, 137);
+    pdf.text('Your Current Life Balance', pdfWidth / 2, wheelY + 120, { align: 'center' });
+
+    // Step 5: Add Score List
+    const headingY = wheelY + 120;
+    const columnYStart = headingY + 15;
+    const rowHeight = 7;
+    const labelX = (pdfWidth / 2) - 30;
+    const valueX = (pdfWidth / 2) + 30;
+
+    pdf.setFont('helvetica', 'normal');
+    pdf.setFontSize(12);
+    pdf.setTextColor('#000');
+
+    for (let i = 0; i < categories.length; i++) {
+      const rowY = columnYStart + i * rowHeight;
+      pdf.text(categories[i], labelX, rowY, { align: 'left' });
+      pdf.text(String(values[i]), valueX, rowY, { align: 'right' });
+    }
+
+    // Step 6: Continue
+    if (callback) callback();
+  };
+}
+
+function generateWheelCanvas(values) {
+  const canvas = document.createElement('canvas');
+  canvas.width = 300;
+  canvas.height = 300;
+
+  const ctx = canvas.getContext('2d');
+  const radius = 100;
+  const centerX = canvas.width / 2;
+  const centerY = canvas.height / 2;
+  const totalSegments = 10;
+  const segmentAngle = (2 * Math.PI) / totalSegments;
+  const levels = 9;
+  const colors = ["#FF0000", "#FF7F00", "#FFFF00", "#00FF00", "#0000FF", "#4B0082", "#8B00FF", "#FF1493", "#FFD700", "#00CED1"];
+
+  // Clear canvas
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // Background wedges
+  for (let i = 0; i < totalSegments; i++) {
+    const start = i * segmentAngle;
+    const end = start + segmentAngle;
+    ctx.beginPath();
+    ctx.moveTo(centerX, centerY);
+    ctx.arc(centerX, centerY, radius, start, end);
+    ctx.closePath();
+    ctx.fillStyle = 'rgba(200, 200, 200, 0.2)';
+    ctx.fill();
+    ctx.stroke();
+  }
+
+  // Concentric rings
+  for (let i = 1; i <= levels; i++) {
+    ctx.beginPath();
+    ctx.arc(centerX, centerY, (i / 10) * radius, 0, 2 * Math.PI);
+    ctx.strokeStyle = 'lightgray';
+    ctx.stroke();
+  }
+
+  // User values
+  for (let i = 0; i < values.length; i++) {
+    const value = values[i];
+    const scaledRadius = (value / 10) * radius;
+    const start = i * segmentAngle;
+    const end = start + segmentAngle;
+    ctx.beginPath();
+    ctx.moveTo(centerX, centerY);
+    ctx.arc(centerX, centerY, scaledRadius, start, end);
+    ctx.closePath();
+    ctx.fillStyle = colors[i % colors.length];
+    ctx.fill();
+    ctx.stroke();
+  }
+
+  return canvas;
+}
+
+
+// === createJournalPages ===
+
+function createJournalPages(pdf, callback) {
+
+
+  const pdfWidth = pdf.internal.pageSize.getWidth();
+  const pdfHeight = pdf.internal.pageSize.getHeight();
+
+  const bg = new Image();
+  bg.src = 'https://angelanddragonalchemy.powerappsportals.com/workbook_background.png';
+
+  bg.onload = function () {
+    let index = 0;
+
+    function addNextPage() {
+      if (index >= categories.length) {
+        callback();
+        return;
+      }
+
+      pdf.addPage();
+      pdf.addImage(bg, 'PNG', 0, 0, pdfWidth, pdfHeight);
+
+      const marginX = 25;
+      let y = 40;
+
+      // Header: Journal (centered)
+      pdf.setFont('helvetica', 'bold');
+      pdf.setFontSize(18);
+      pdf.setTextColor('#e62089');
+      pdf.text('Journal', pdfWidth / 2, y, { align: 'center' });
+
+      // Category name (centered)
+      y += 10;
+      pdf.setFont('helvetica', 'normal');
+      pdf.setFontSize(14);
+      pdf.setTextColor('#000');
+      pdf.text(categories[index], pdfWidth / 2, y, { align: 'center' });
+
+      // Prompts (left-aligned)
+      y += 15;
+      const prompts = [
+        "What’s currently true in this area of life?",
+        "What do you *want* to feel or experience here?",
+        "What does alignment look like to you?",
+        "What inspired ideas or changes are calling to you now?"
+      ];
+
+      pdf.setFontSize(12);
+      pdf.setTextColor('#000');
+      const lineHeight = 7;
+      const lineGap = 12;
+
+      for (let prompt of prompts) {
+        pdf.text(prompt, marginX, y);
+        y += lineHeight;
+        for (let i = 0; i < 4; i++) {
+          pdf.line(marginX, y, pdfWidth - marginX, y);
+          y += lineGap;
+        }
+      }
+
+      index++;
+      setTimeout(addNextPage, 0); // yield to event loop
+    }
+
+    addNextPage();
+  };
+}
+
+function createBackCover(pdf, callback) {
+  const pdfWidth = pdf.internal.pageSize.getWidth();
+  const pdfHeight = pdf.internal.pageSize.getHeight();
+
+  const bg = new Image();
+  bg.src = 'https://angelanddragonalchemy.powerappsportals.com/inside_back_cover.png';
+
+  const bg2 = new Image();
+  bg2.src = 'https://angelanddragonalchemy.powerappsportals.com/back_cover.png';
+
+  bg.onload = function () {
+    pdf.addPage();
+    pdf.addImage(bg, 'PNG', 0, 0, pdfWidth, pdfHeight);
+
+    bg2.onload = function () {
+      pdf.addPage();
+      pdf.addImage(bg2, 'PNG', 0, 0, pdfWidth, pdfHeight);
+
+      // ✅ Only call the callback after both images are loaded and added
+      if (callback) callback();
+    };
+  };
+}
+
+  
+
+
+  const categories = [
+    "Health & Wellbeing",
+    "Financial Abundance",
+    "Relationships",
+    "Love & Romance",
+    "Community & Belonging",
+    "Work & Purpose",
+    "Personal Growth & Learning",
+    "Hobbies & Leisure",
+    "Living Space & Possessions",
+    "Spirituality & Identity"
+  ];
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
