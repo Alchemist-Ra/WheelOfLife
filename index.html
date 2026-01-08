@@ -1,8 +1,8 @@
 <div class="small">Build: 2026-01-07</div>
 
-<div id="wheelWrapper" style="font-family: 'Coming Soon', 'Comic Sans MS', cursive, sans-serif; background-image: url('https://angelanddragonalchemy.powerappsportals.com/background_image.png'); background-size: cover; background-position-x: center; background-position-y: center; background-attachment: fixed; color: rgb(34, 34, 34); padding-top: 60px; padding-right: 20px; padding-bottom: 60px; padding-left: 20px; text-align: center;">
+<div id="wheelWrapper" style="font-family: 'Coming Soon', 'Comic Sans MS', cursive, sans-serif; background-image: background_image.png'); background-size: cover; background-position-x: center; background-position-y: center; background-attachment: fixed; color: rgb(34, 34, 34); padding-top: 60px; padding-right: 20px; padding-bottom: 60px; padding-left: 20px; text-align: center;">
   <div class="contentBubble" style="background-image: initial; background-position-x: initial; background-position-y: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgba(255, 255, 255, 0.6); backdrop-filter: blur(6px); border-top-left-radius: 24px; border-top-right-radius: 24px; border-bottom-right-radius: 24px; border-bottom-left-radius: 24px; padding-top: 40px; padding-right: 20px; padding-bottom: 40px; padding-left: 20px; margin-top: 0px; margin-right: auto; margin-bottom: 40px; margin-left: auto; max-width: 800px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 20px;">
-    <img src="https://angelanddragonalchemy.powerappsportals.com/transparent_logo.png" alt="Angel and Dragon Logo" style="max-width: 200px; height: auto; margin-bottom: 20px;" />
+    <img src="transparent_logo.png" alt="Angel and Dragon Logo" style="max-width: 200px; height: auto; margin-bottom: 20px;" />
     <h1 style="font-size: 2.2em; color: rgb(230, 32, 137); margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;">Your Wheel of Life</h1>
     <h4 style="font-weight: normal; color: rgb(68, 68, 68); margin-top: 10px; margin-bottom: 40px;">A Journey of Alchemy and Insight</h4>
     <svg id="wheel" viewBox="-110 -110 220 220" style="width: 100%; max-width: 300px; height: auto; margin-top: 20px; margin-right: auto; margin-bottom: 20px; margin-left: auto; display: block;"></svg>
@@ -72,7 +72,7 @@
   <div class="container" style="padding: 0px; display: flex; flex-wrap: wrap;"><div class="col-md-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 250px;"></div></div>
 </div>
 
-<div id="coverPage" style="display: none; width: 794px; height: 1123px; position: relative; background-image: url('https://angelanddragonalchemy.powerappsportals.com/workbook_cover.png'); background-size: cover; background-position: center; font-family: 'Coming Soon', 'Comic Sans MS', cursive, sans-serif; color: #222; text-align: center; padding: 60px 40px;">
+<div id="coverPage" style="display: none; width: 794px; height: 1123px; position: relative; background-image: url('workbook_cover.png'); background-size: cover; background-position: center; font-family: 'Coming Soon', 'Comic Sans MS', cursive, sans-serif; color: #222; text-align: center; padding: 60px 40px;">
 
   <img src="https://angelanddragonalchemy.powerappsportals.com/transparent_logo.png" alt="Logo" style="max-width: 160px; margin-bottom: 30px;" />
   <h1 style="font-size: 2.5em; color: #e62089; margin-bottom: 0.3em;">Your Wheel of Life</h1>
@@ -81,13 +81,13 @@
 
   <div style="height: 30px;"></div>
 
-  <img src="https://angelanddragonalchemy.powerappsportals.com/pentagram.png" alt="Wheel of Life Collage"
+  <img src="pentagram.png" alt="Wheel of Life Collage"
     style="display: block; width: 80%; max-width: 126mm; margin: 0 auto; border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);" />
 
 </div>
 
 
-<div id="wheelPage" style="display: none; width: 794px; height: 1123px; position: relative; background-image: url('https://angelanddragonalchemy.powerappsportals.com/background_image.png'); background-size: cover; background-position: center; font-family: 'Coming Soon', 'Comic Sans MS', cursive, sans-serif; color: #222; text-align: center; padding: 60px 40px;">
+<div id="wheelPage" style="display: none; width: 794px; height: 1123px; position: relative; background-image: url('background_image.png'); background-size: cover; background-position: center; font-family: 'Coming Soon', 'Comic Sans MS', cursive, sans-serif; color: #222; text-align: center; padding: 60px 40px;">
   <div style="background-color: rgba(255, 255, 255, 0.6); backdrop-filter: blur(6px); border-radius: 24px; max-width: 700px; margin: 0 auto; padding: 40px 30px 60px 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
     <h2 style="font-size: 1.6em; color: #e62089; margin-bottom: 30px;">Your Current Life Balance</h2>
 
@@ -188,13 +188,13 @@ function createCover(pdf, name, callback) {
   const pdfHeight = pdf.internal.pageSize.getHeight();
 
   const coverImg = new Image();
-  coverImg.src = 'https://angelanddragonalchemy.powerappsportals.com/workbook_cover.png';
+  coverImg.src = 'workbook_cover.png';
 
   coverImg.onload = function () {
     pdf.addImage(coverImg, 'PNG', 0, 0, pdfWidth, pdfHeight);
 
     const logo = new Image();
-    logo.src = 'https://angelanddragonalchemy.powerappsportals.com/transparent_logo.png';
+    logo.src = 'transparent_logo.png';
 
     logo.onload = function () {
       const logoWidth = 40;
@@ -230,7 +230,7 @@ function createWheelPage(pdf, callback) {
 
   // Load the background image
   const bg = new Image();
-  bg.src = 'https://angelanddragonalchemy.powerappsportals.com/workbook_background.png';
+  bg.src = 'workbook_background.png';
 
   bg.onload = function () {
     pdf.addPage();
@@ -345,7 +345,7 @@ function createJournalPages(pdf, callback) {
   const pdfHeight = pdf.internal.pageSize.getHeight();
 
   const bg = new Image();
-  bg.src = 'https://angelanddragonalchemy.powerappsportals.com/workbook_background.png';
+  bg.src = 'workbook_background.png';
 
   bg.onload = function () {
     let index = 0;
@@ -411,10 +411,10 @@ function createBackCover(pdf, callback) {
   const pdfHeight = pdf.internal.pageSize.getHeight();
 
   const bg = new Image();
-  bg.src = 'https://angelanddragonalchemy.powerappsportals.com/inside_back_cover.png';
+  bg.src = 'inside_back_cover.png';
 
   const bg2 = new Image();
-  bg2.src = 'https://angelanddragonalchemy.powerappsportals.com/back_cover.png';
+  bg2.src = 'back_cover.png';
 
   bg.onload = function () {
     pdf.addPage();
